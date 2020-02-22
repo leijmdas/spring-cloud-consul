@@ -1,0 +1,18 @@
+server:
+  port: 8763
+
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: consul-provider
+  cloud:
+    consul:
+      host: 192.168.4.162
+      port: 8500
+      discovery:
+        ipAddress: 192.168.4.19
+        hostname: 192.168.4.19
+        serviceName: consul-provider
+        prefer-ip-address: false
